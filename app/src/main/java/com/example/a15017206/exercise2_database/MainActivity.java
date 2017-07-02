@@ -61,7 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<Task> dataTask = db.getTasks();
                 db.close();
 
+                //clear all EditText & ArrayList
+                task.clear();
                 String txt = "";
+
                 for (int i = 0; i < data.size(); i++) {
                     Log.d("Database Content", i + ". " + data.get(i));
                     txt += i + ". " + data.get(i) + "\n";

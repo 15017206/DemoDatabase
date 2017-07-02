@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class DBHelper extends SQLiteOpenHelper {
 
     //Start version with 1 - increment by 1 whenever DB schema changes ; change to 1 will trigger onUpgrade
-    private static final int DATABASE_VER = 2;
+    private static final int DATABASE_VER = 1;
 
     // Filename of the database
     private static final String DATABASE_NAME = "tasks.db";
